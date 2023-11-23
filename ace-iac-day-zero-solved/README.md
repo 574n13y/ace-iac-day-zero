@@ -28,26 +28,35 @@
          You should see the "Aviatrix Sandbox Starter" user interface (UI) now.
     ![2](https://github.com/574n13y/ace-iac-day-zero/assets/35293085/4467c5b4-f6ff-4ba4-af90-389345fa87ad)
 
-     9. Provide AWS Credentials
+     8. Provide AWS Credentials
     ![3](https://github.com/574n13y/ace-iac-day-zero/assets/35293085/f6deccb5-5359-409d-83b7-3e0e9b5e1bee)
+
+     9. Launch the Controller in AWS
     ![4](https://github.com/574n13y/ace-iac-day-zero/assets/35293085/578eb624-0fe1-4df8-8429-c2682c44ac0d)
     ![5](https://github.com/574n13y/ace-iac-day-zero/assets/35293085/fc059dea-4a09-4764-b1dc-94aa25348baa)
+
+     10. Open a Setup Controller IP in the browser
     ![6](https://github.com/574n13y/ace-iac-day-zero/assets/35293085/29d75c79-f0fb-4cde-bee6-56da18b8f651)
+
+     11. The user name is admin and the password is the one you selected earlier in the process.
     ![7](https://github.com/574n13y/ace-iac-day-zero/assets/35293085/68a71310-3a59-4329-9aa1-1a5e4ff5b814)
+
+     12. Launch CoPilot
     ![8](https://github.com/574n13y/ace-iac-day-zero/assets/35293085/94e98be5-b1d8-4d2a-9b91-50d4759c8b07)
+
+     13. credentials are the same as what we have used in the Controller
     ![9](https://github.com/574n13y/ace-iac-day-zero/assets/35293085/d920b448-c670-471c-9a44-7e2d918facec)
 
-
-
-
-
-
-
-
-
-    
-
-
-  - AWS Secret Key 
+  - AWS - Key pair
+    ```
+    On the EC2 dashboard select Key Pair
+    Now create a new Key Pair and call it ohio-kp as shown in the diagram below. Spaces are not allowed in the Key Pair name
+    ***For Linux/MAC use .pem format***
+    ***For Windows use .ppk***
+    ```
   - Azure API Keys
+     ```
+     Get-AZSubscription
+     az ad sp create-for-rbac --name "<application name>" --role="contributor" --scopes=/subscriptions/<subscriptions-id>
+     ```
 
